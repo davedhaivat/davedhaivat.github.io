@@ -253,31 +253,168 @@ footer p{font-size:12px;color:var(--ink4);}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.55s ease,transform 0.55s ease;}
 .reveal.on{opacity:1;transform:translateY(0);}
 
-/* RESPONSIVE */
+/* ── TABLET 960px ── */
 @media(max-width:960px){
   .sidebar{display:none;}
   .main{margin-left:0;}
   .hero{padding:48px 32px;}
-  .photo-strip{padding:24px 32px;}
   .content{padding:48px 32px;}
   .skills-bento{grid-template-columns:1fr 1fr;}
-  .skill-cell.wide{grid-column:span 1;}
+  .skill-cell.area-ba{grid-column:1/3;}
+  .skill-cell.area-uat{grid-column:1/2;}
+  .skill-cell.area-agile{grid-column:2/3;}
+  .skill-cell.area-stake{grid-column:1/2;}
+  .skill-cell.area-tools{grid-column:2/3;}
   .hero-bottom{grid-template-columns:1fr;}
+  .hero-meta{align-items:flex-start;}
   .contact-strip{grid-template-columns:1fr;}
   .contact-links{min-width:auto;}
+  .proj-bullets-grid{grid-template-columns:1fr;}
+  .exp-older-grid{grid-template-columns:1fr 1fr;}
 }
+
+/* ── MOBILE 600px ── */
 @media(max-width:600px){
-  .hero{padding:32px 20px;}
-  .photo-strip{padding:20px;flex-wrap:wrap;}
-  .content{padding:32px 20px;gap:56px;}
-  .skills-bento{grid-template-columns:1fr;}
-  .skill-cell.wide{grid-column:span 1;}
+
+  /* HERO */
+  .hero{padding:28px 20px 36px;}
+  .hero-bg-text{font-size:120px;top:-10px;right:-10px;}
+  .hero-top{margin-bottom:20px;}
+  .hero-index,.hero-year{font-size:10px;}
+  .hero-otw{font-size:11px;padding:6px 13px;}
+  .hero-name{font-size:52px;letter-spacing:-2px;margin-bottom:24px;}
+  .hero-divider{margin-bottom:24px;gap:12px;}
+  .hero-title-pill{font-size:10px;padding:5px 13px;white-space:normal;text-align:center;}
+  .hero-bottom{grid-template-columns:1fr;gap:28px;}
+  .hero-bio{font-size:14px;}
+  .hero-meta{align-items:flex-start;gap:16px;}
+  .hero-stats{gap:16px;}
+  .hero-stat-num{font-size:28px;}
+  .hero-stat-label{font-size:9px;}
+  .hero-cta{flex-wrap:wrap;gap:10px;}
+  .btn-dark,.btn-ghost{padding:10px 20px;font-size:13px;width:100%;text-align:center;}
+  .profile-img-hero{width:64px;height:64px;border-radius:12px;}
+
+  /* CONTENT PADDING */
+  .content{padding:28px 20px;gap:52px;}
+
+  /* SECTION HEADS */
+  .sec-head{gap:10px;margin-bottom:24px;}
+  .sec-title{font-size:24px;}
+  .sec-num{font-size:12px;}
+
+  /* SKILLS */
+  .skills-bento{grid-template-columns:1fr;gap:12px;}
+  .skill-cell.area-ba,.skill-cell.area-uat,.skill-cell.area-agile,
+  .skill-cell.area-stake,.skill-cell.area-tools{grid-column:1;}
+  .skill-cell{padding:18px;}
+  .skill-cell-title{font-size:14px;}
+
+  /* EXPERIENCE */
+  .exp-card-head{grid-template-columns:auto 1fr auto;gap:10px;padding:18px 16px;}
+  .exp-num{font-size:22px;width:36px;}
+  .exp-company{font-size:14px;}
+  .exp-role{font-size:12px;}
+  .exp-location{font-size:11px;}
+  .exp-period{font-size:11px;}
+  .exp-body-inner{padding:16px 16px 20px;}
+  .exp-sections{grid-template-columns:1fr;gap:16px;}
+  .exp-achievements{padding:12px 16px;gap:6px;}
+  .ach-badge{font-size:11px;padding:4px 10px;}
+  .exp-older-grid{grid-template-columns:1fr;gap:12px;}
+  .exp-card-compact{padding:16px 18px;}
+  .exp-compact-top{flex-direction:column;gap:6px;}
+
+  /* PROJECTS */
+  .proj-card-top{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 18px;}
+  .proj-features{gap:6px;}
+  .proj-feat-tag{font-size:10px;padding:4px 10px;}
+  .proj-domain{font-size:10px;padding:4px 12px;}
+  .proj-main{padding:18px 18px 16px;}
+  .proj-name{font-size:18px;}
+  .proj-desc{font-size:13px;}
+  .proj-meta-row{gap:6px;flex-wrap:wrap;}
+  .proj-meta-item{font-size:11px;}
+  .proj-achievements{gap:6px;}
+  .proj-divider{margin:0 18px;}
+  .proj-bullets-wrap{padding:16px 18px 16px;}
+  .proj-bullets-grid{grid-template-columns:1fr;gap:10px;}
+  .proj-bullet-item{font-size:12px;}
+  .proj-tools-row{padding:14px 18px 18px;}
+  .proj-tools-list{gap:14px;}
+  .proj-tool-icon{width:30px;height:30px;}
+  .proj-tool-name{font-size:9px;}
+
+  /* EDUCATION */
+  .edu-card{grid-template-columns:auto 1fr;}
+  .edu-body{padding:20px;flex-direction:column;align-items:flex-start;gap:14px;}
+  .edu-degree{font-size:15px;}
+  .edu-uni{font-size:13px;}
+
+  /* PUBLICATIONS */
+  .pub-grid{grid-template-columns:1fr;gap:12px;}
+  .pub-card{padding:18px;}
+  .pub-title{font-size:14px;}
+
+  /* TESTIMONIALS */
+  .testi-grid{grid-template-columns:1fr;gap:12px;}
+  .testi-card,.testi-card-wide{grid-column:1;padding:20px;}
+  .testi-quote{font-size:48px;}
+  .testi-text{font-size:13px;}
+  .testi-name{font-size:13px;}
+  .testi-role{font-size:11px;}
+  .testi-source{font-size:10px;}
+
+  /* CONTACT */
+  .contact-strip{padding:28px 20px;border-radius:16px;}
+  .contact-heading{font-size:24px;}
+  .contact-sub{font-size:13px;}
+  .contact-link{padding:12px 14px;}
+  .contact-link-val{font-size:12px;}
+
+  /* FOOTER */
   footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
-  .contact-strip{padding:32px 24px;}
-  .exp-sections{grid-template-columns:1fr;}
-  .edu-body{flex-direction:column;align-items:flex-start;}
-  .hero-stats{gap:20px;}
-  .hero-meta{align-items:flex-start;}
+
+  /* MOBILE NAV BAR — fixed bottom */
+  .mobile-nav{display:flex;}
+}
+
+/* MOBILE BOTTOM NAV */
+.mobile-nav{
+  display:none;
+  position:fixed;
+  bottom:0;left:0;right:0;
+  background:var(--ink);
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding:10px 4px calc(10px + env(safe-area-inset-bottom));
+  z-index:300;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.mobile-nav a{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3px;
+  color:rgba(255,255,255,0.4);
+  text-decoration:none;
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+  padding:4px 8px;
+  border-radius:8px;
+  transition:color 0.2s;
+  min-width:48px;
+}
+
+.mobile-nav a svg{width:18px;height:18px;}
+.mobile-nav a.active,.mobile-nav a:hover{color:var(--g200);}
+
+/* add bottom padding to main so content isn't hidden behind mobile nav */
+@media(max-width:600px){
+  .main{padding-bottom:72px;}
 }
 </style>
 </head>
@@ -1109,6 +1246,30 @@ footer p{font-size:12px;color:var(--ink4);}
     </a>
   </footer>
 
+  <!-- Mobile bottom nav -->
+  <nav class="mobile-nav">
+    <a href="#skills" class="mobile-nav-link">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      Skills
+    </a>
+    <a href="#experience" class="mobile-nav-link">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      Experience
+    </a>
+    <a href="#projects" class="mobile-nav-link">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+      Projects
+    </a>
+    <a href="#publications" class="mobile-nav-link">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+      Papers
+    </a>
+    <a href="#contact" class="mobile-nav-link">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      Contact
+    </a>
+  </nav>
+
 </main>
 
 <script>
@@ -1125,15 +1286,20 @@ const obs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 const sections=document.querySelectorAll('section[id]');
 const navLinks=document.querySelectorAll('.nav-link');
+const mobileLinks=document.querySelectorAll('.mobile-nav-link');
 const scrollObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
       navLinks.forEach(a=>a.classList.remove('active'));
-      const active=document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      mobileLinks.forEach(a=>a.classList.remove('active'));
+      const id=e.target.id;
+      const active=document.querySelector(`.nav-link[href="#${id}"]`);
+      const mActive=document.querySelector(`.mobile-nav-link[href="#${id}"]`);
       if(active)active.classList.add('active');
+      if(mActive)mActive.classList.add('active');
     }
   });
-},{threshold:0.4});
+},{threshold:0.3});
 sections.forEach(s=>scrollObs.observe(s));
 </script>
 </body>
