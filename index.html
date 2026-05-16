@@ -137,8 +137,9 @@ body{font-family:'Outfit',sans-serif;background:var(--paper);color:var(--ink);fo
 .exp-older-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .exp-card-compact{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px;transition:border-color 0.2s;}
 .exp-card-compact:hover{border-color:var(--border2);}
-.exp-compact-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px;}
-.exp-compact-top .exp-right{flex-shrink:0;}
+.exp-compact-top{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.exp-compact-header{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:nowrap;}
+.exp-compact-header .exp-company{margin-bottom:0;}
 @media(max-width:700px){.exp-older-grid{grid-template-columns:1fr;}}
 
 /* ACHIEVEMENT BADGES */
@@ -668,14 +669,12 @@ footer p{font-size:12px;color:var(--ink4);}
 
           <div class="exp-card-compact">
             <div class="exp-compact-top">
-              <div>
+              <div class="exp-compact-header">
                 <div class="exp-company">Zealous System</div>
-                <div class="exp-role">Business Analyst</div>
-              </div>
-              <div class="exp-right">
-                <div class="exp-period">Mar – Sept 2019</div>
                 <span class="exp-badge badge-past">Past</span>
               </div>
+              <div class="exp-role">Business Analyst</div>
+              <div class="exp-period">Mar – Sept 2019</div>
             </div>
             <ul class="exp-bullets">
               <li>Requirement documentation and user story preparation for web and mobile projects.</li>
@@ -685,14 +684,12 @@ footer p{font-size:12px;color:var(--ink4);}
 
           <div class="exp-card-compact">
             <div class="exp-compact-top">
-              <div>
+              <div class="exp-compact-header">
                 <div class="exp-company">Hems Hub</div>
-                <div class="exp-role">Business Analyst</div>
-              </div>
-              <div class="exp-right">
-                <div class="exp-period">Feb 2018 – Feb 2019</div>
                 <span class="exp-badge badge-past">Past</span>
               </div>
+              <div class="exp-role">Business Analyst</div>
+              <div class="exp-period">Feb 2018 – Feb 2019</div>
             </div>
             <ul class="exp-bullets">
               <li>BRD and FRD documentation for client projects and development handoff.</li>
@@ -702,14 +699,12 @@ footer p{font-size:12px;color:var(--ink4);}
 
           <div class="exp-card-compact">
             <div class="exp-compact-top">
-              <div>
+              <div class="exp-compact-header">
                 <div class="exp-company">Vrinsoft Technology</div>
-                <div class="exp-role">IT Business Analyst</div>
-              </div>
-              <div class="exp-right">
-                <div class="exp-period">Sept 2016 – Jan 2018</div>
                 <span class="exp-badge badge-past">Past</span>
               </div>
+              <div class="exp-role">IT Business Analyst</div>
+              <div class="exp-period">Sept 2016 – Jan 2018</div>
             </div>
             <ul class="exp-bullets">
               <li>BRD and FRD for e-commerce and payment platforms, translating needs into functional specs.</li>
@@ -719,14 +714,12 @@ footer p{font-size:12px;color:var(--ink4);}
 
           <div class="exp-card-compact">
             <div class="exp-compact-top">
-              <div>
+              <div class="exp-compact-header">
                 <div class="exp-company">Wama Software</div>
-                <div class="exp-role">Business Analyst Intern</div>
-              </div>
-              <div class="exp-right">
-                <div class="exp-period">Jan – Aug 2016</div>
                 <span class="exp-badge badge-past">Internship</span>
               </div>
+              <div class="exp-role">Business Analyst Intern</div>
+              <div class="exp-period">Jan – Aug 2016</div>
             </div>
             <ul class="exp-bullets">
               <li>Supported requirement gathering and prepared foundational BRD and FRD documentation.</li>
